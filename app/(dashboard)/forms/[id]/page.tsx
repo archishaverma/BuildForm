@@ -56,28 +56,28 @@ async function FormDetailPage({
                 helperText="All time form visits"
                 value={visits.toLocaleString() || ""}
                 loading={false}
-                className="shadow-md shadow-blue-600"
+                className="shadow-md shadow-green-700"
             />
 
             <StatsCard title="Total submissions" icon={<FaWpforms className="text-yellow-600" />}
                 helperText="All time form submissions"
                 value={submissions.toLocaleString() || ""}
                 loading={false}
-                className="shadow-md shadow-yellow-600"
+                className="shadow-md shadow-orange-600"
             />
 
             <StatsCard title="Submission Rate" icon={<HiCursorClick className="text-green-600" />}
                 helperText="Visits that result in form submission"
                 value={submissionRate.toLocaleString() + "%" || ""}
                 loading={false}
-                className="shadow-md shadow-green-600"
+                className="shadow-md shadow-lime-800"
             />
 
             <StatsCard title="Bounce Rate" icon={<TbArrowBounce className="text-red-600" />}
                 helperText="Visits that leave without interacting"
                 value={bounceRate.toLocaleString() + "%" || ""}
                 loading={false}
-                className="shadow-md shadow-red-600"
+                className="shadow-md shadow-red-500"
             />
         </div>
 
